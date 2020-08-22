@@ -1,3 +1,9 @@
+:root {
+  --main-color: #6c63ff;
+  --secondary-color: #ff6584;
+  --bg__main-color: #6c63ff;
+  --bg__secondary-color: #ff6584;
+}
 body {
   margin: 0;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
@@ -26,6 +32,30 @@ a {
   color: inherit;
 }
 
+.container {
+  max-width: 1040px;
+  width: 100%;
+}
+#header {
+  display: flex;
+  width: 100%;
+}
+.x-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+.main-color {
+  color: var(--main-color);
+}
+.secondary-color {
+  color: var(--secondary-color);
+}
+.bg__main-color {
+  background-color: var(--main-color);
+}
+.bg__secondary-color {
+  background-color: var(--secondary-color);
+}
 code {
   font-family: menlo, inconsolata, monospace;
   font-size: calc(1em - 2px);
@@ -39,17 +69,4 @@ code {
   body {
     font-size: 16px;
   }
-}
-
-.container {
-  max-width: 1040px;
-  width: 100%;
-}
-#header {
-  display: flex;
-  width: 100%;
-}
-.x-auto {
-  margin-right: auto;
-  margin-left: auto;
 }
